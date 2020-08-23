@@ -1,0 +1,40 @@
+body{
+    margin: 0 auto;
+    width: 70%;
+    background-image: url(./media/backgroundlaguna.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.Hero{
+    height: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Hero img{
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 210px;
+}
+
+.Hero h1 {
+    text-align: center;
+    color: #F6F4F2;
+    font-size: 4vh;
+}
+
+.Hero h1 strong{
+    color: #AF3140;
+}
+
+@media screen and (max-width: 421px){
+    .Hero{
+        display: inline;
+        justify-content: space-evenly;
+    }
+}
