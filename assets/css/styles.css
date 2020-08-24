@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Hero-back{
+    background-image: url(../media/backgroundlaguna.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Hero{
+    margin: 0 auto;
+    width: 80%;
+    height: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Hero img{
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 20vh;
+}
+
+.Hero h1 {
+    text-align: center;
+    color: #F6F4F2;
+    font-size: 4vh;
+}
+
+.Hero h1 strong{
+    color: #EC9F52;
+}
+
+.Header-back{
+    background-color: #AF3140;
+}
+
+.Header{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: start;
+}
+
+.Header h2{
+    color: #F6F4F2;
+    font-size: 2.7vh;
+    margin: 2vh;
+}
+
+#About{
+    width: 80%;
+    margin: 0 auto;
+    height: 520px;
+    color: #043D5A;
+    display: flex;
+    justify-content: space-between;
+}
+
+.About-info{
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 20px;
+    width: 42%;
+    background-color: #F6F4F2;
+    height: auto;
+}
+
+.About-info.technologies{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.About--technologies img{
+    width: 14vh;
+    height: 14vh;
+}
+.About--technologies p{
+    color: black;
+    text-align: center;
+}
+
+.About-info strong{
+    color: #EC9F52;
+}
+
+@media screen and (max-width: 1025px){
+    .Hero{
+        height: auto;
+        padding: 50px 0;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .Header{
+        width: auto;
+        justify-content: center;
+    }
+
+    #About{
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
+    .About-info{
+        width: 100%;
+    }
+
+    .About-info img{
+        width: 8vh;
+        height: 8vh;
+    }
+}
