@@ -7,16 +7,23 @@ a{
     text-decoration: none;
 }
 
-.Hero-back{
+/* This is how i center things in a max width without coding to much */
+.container {
+    max-width: 1280px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit; }
+
+.Hero{
     background-image: url(../media/backgroundlaguna.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.Hero{
     margin: 0 auto;
-    width: 80%;
     height: 22vw;
     padding: 200px 0;
     display: flex;
@@ -42,13 +49,9 @@ a{
     color: #EC9F52;
 }
 
-.Header-back{
-    background-color: #AF3140;
-}
-
 .Header{
+    background-color: #AF3140;
     margin: 0 auto;
-    width: 80%;
     display: flex;
     justify-content: start;
 }
@@ -60,7 +63,6 @@ a{
 }
 
 #About{
-    width: 80%;
     margin: 0 auto;
     height: 520px;
     color: #043D5A;
@@ -125,7 +127,13 @@ a{
     width: 30vh;
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1441px){
+    .container{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px){
     *{
         text-align: center !important;
     }
@@ -165,5 +173,24 @@ a{
     .About-info img{
         width: 14vw;
         height: 14vw;
+    }
+}
+
+/* Does somebody will see this from a Fold??!? */
+@media screen and (max-width: 321px){
+    .Hero img{
+        height: 30vh;
+        width: 30vh;
+    }
+    
+    .Header h2{
+        color: #F6F4F2;
+        font-size: 1vh;
+        margin: 0.9vh;
+    }
+
+    .About-info{
+        margin: 1vh;
+        padding: 0.420vh;
     }
 }
