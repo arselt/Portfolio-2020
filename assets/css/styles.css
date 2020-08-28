@@ -24,24 +24,25 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
-    height: 22vw;
-    padding: 200px 0;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .Hero img{
-    width: 40vh;
-    height: 40vh;
+    width: 50vw;
+    height: 50vw;
+    max-width: 360px;
+    max-height: 360px;
     object-fit: cover;
-    border-radius: 20vh;
+    border-radius: 40vw;
 }
 
 .Hero h1 {
     text-align: center;
     color: #F6F4F2;
-    font-size: 4vh;
+    /* font-size: 42px; */
     margin: auto 0;
 }
 
@@ -58,43 +59,47 @@ a{
 
 .Header h2{
     color: #F6F4F2;
-    font-size: 2.7vh;
-    margin: 2vh;
+    /* font-size: 30px; */
+    margin: 30px;
 }
 
 #About{
     margin: 0 auto;
-    height: 520px;
+    height: auto;
     color: #043D5A;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.About-info{
-    padding: 20px;
-    margin: 40px 0 0 0;
+.Rounded_container{
+    margin-top: 40px;
     border-radius: 20px;
-    width: 44%;
+    width: 48%;
     background-color: #F6F4F2;
     height: auto;
 }
 
-.About-info.technologies{
+.Rounded_container.info p,h2{
+    margin: 20px 30px;
+}
+
+.Rounded_container.technologies{
     display: flex;
     flex-direction: column;
 }
 
 .About-info--row.technologies{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2px 20px;
+    padding: 2px 40px;
     text-align: center;
 }
 
 .About--images img{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
 }
 .About--images p{
@@ -102,11 +107,11 @@ a{
     text-align: center;
 }
 
-.About-info strong{
+.Rounded_container strong{
     color: #EC9F52;
 }
 
-.About-info.experience{
+.Rounded_container.experience{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,12 +124,41 @@ a{
     color: #F6F4F2;
 }
 
-.About-info.experience h2{
+.Rounded_container.experience h2{
     margin: 0;
 }
 
-.About-info.experience img{
-    width: 30vh;
+.Rounded_container.experience img{
+    width: 30vw
+}
+
+#Portfolio{
+   height:auto; 
+   background-color: #F6F4F2;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: stretch;
+}
+
+#Portfolio h2{
+    text-align: center;
+    width: 100%;
+    color: #AF3140;
+}
+
+.Rounded_container.Portfolio_project{
+    height: 260px;
+    margin: 10px 0 30px 0;
+    padding: inherit;
+    background-color: #e6e4e2;
+}
+
+.Rounded_container.Portfolio_project img{
+    height: 100%;
+    width: 44%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1441px){
@@ -139,8 +173,8 @@ a{
     }
 
     .Hero{
-        height: auto;
-        padding: 50px 0;
+        /* height: 100vh; */
+        /* padding: 50px 0; */
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: space-around;
@@ -148,7 +182,7 @@ a{
     }
 
     .Hero img{
-        margin-bottom: 5vh;
+        margin-bottom: 5vw;
     }
 
     .Header{
@@ -157,7 +191,8 @@ a{
     }
 
     .Header a h2{
-        font-size: 2.1vh;
+        font-size: 4vw;
+        margin: 5vw 3vw;
     }
 
     #About{
@@ -166,31 +201,43 @@ a{
         justify-content: space-between;
     }
 
-    .About-info{
+    .About--images p{
+        font-size: 10px;     
+    }
+
+    .Rounded_container{
         width: 100%;
     }
 
-    .About-info img{
-        width: 14vw;
-        height: 14vw;
+    .Rounded_container img{
+        width: 17vw;
+        height: 17vw;
+    }
+
+    .Rounded_container.experience img{
+        width: 50vw;
+    }
+
+    .Rounded_container.Portfolio_project{
+        height: 40vw;
+        width: 100%;
+        text-align: start !important;
     }
 }
 
 /* Does somebody will see this from a Fold??!? */
 @media screen and (max-width: 321px){
     .Hero img{
-        height: 30vh;
-        width: 30vh;
+        height: 50vw;
+        width: 50vw;
     }
     
     .Header h2{
         color: #F6F4F2;
-        font-size: 1vh;
-        margin: 0.9vh;
     }
 
-    .About-info{
-        margin: 1vh;
-        padding: 0.420vh;
+    .Rounded_container{
+        margin: 6vw 0 0 0;
+        padding: 0.420vw;
     }
 }
