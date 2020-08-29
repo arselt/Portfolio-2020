@@ -51,14 +51,14 @@ a{
     color: #EC9F52;
 }
 
-.Header{
+#Header{
     background-color: #AF3140;
     margin: 0 auto;
     display: flex;
     justify-content: start;
 }
 
-.Header h2{
+#Header h2{
     color: #F6F4F2;
     /* font-size: 30px; */
     margin: 30px;
@@ -255,14 +255,22 @@ footer{
         margin-bottom: 5vw;
     }
 
-    .Header{
-        width: auto;
+    #Header{
+        width: 100%;
         justify-content: center;
     }
 
-    .Header a h2{
+    #Header a h2{
         font-size: 4vw;
         margin: 5vw 3vw;
+    }
+
+    h2{
+        font-size: 6vw;
+    }
+
+    p{
+        font-size: 3vw;
     }
 
     #About{
@@ -295,7 +303,7 @@ footer{
     }
 
     .Portfolio_project--info{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
 
@@ -306,7 +314,7 @@ footer{
         width: 50vw;
     }
     
-    .Header h2{
+    #Header h2{
         color: #F6F4F2;
     }
 
