@@ -183,12 +183,27 @@ a{
 }
 
 #Contact{
-    height: 980px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
- }
+    background-color: #043D5A;
+}
+
+.Rounded_container.contact{
+    background-color: #e6e4e2;
+    height: 420px;
+    width: 100%;
+    margin: 40px 0;
+    padding: inherit;
+    display: flex;
+}
+
+footer{
+    background-color: #021a26;
+    height: 105px;
+}
 
 @media screen and (max-width: 1441px){
     .container{
