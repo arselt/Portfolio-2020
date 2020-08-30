@@ -100,19 +100,22 @@ h2{
     flex-direction: column;
 }
 
+.Rounded_container.technologies h2{
+    margin-left: 12px;
+}
+
 .About-info--row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2px 40px;
+    margin: 0px 30px;
 }
 
 .About--images img{
-    width: 12vw;
-    height: 12vw;
-    max-height: 120px;
-    max-width: 120px;
-    margin: 0 1vw;
+    width: 14vw;
+    height: 14vw;
+    max-height: 140px;
+    max-width: 140px;
     object-fit: contain;
 }
 .About--images p{
@@ -151,6 +154,7 @@ h2{
    flex-wrap: wrap;
    justify-content: space-between;
    align-items: stretch;
+   background-color: #FDFCFC;
 }
 
 #Portfolio h2{
@@ -295,9 +299,13 @@ footer{
         width: 100%;
     }
 
+    .About-info--row.technologies.tittle{
+        justify-content: space-around;
+    }
+
     .Rounded_container img{
-        width: 17vw;
-        height: 17vw;
+        width: 20vw;
+        height: 20vw;
     }
 
     .Rounded_container.experience img{
