@@ -5,7 +5,15 @@ body{
 
 a{
     text-decoration: none;
-    color: #EC9F52;
+    color: #AF3140;
+}
+
+p{
+    color: #0876AD;
+}
+
+h2{
+    color: #0876AD;
 }
 
 /* This is how i center things in a max width without coding to much */
@@ -32,23 +40,26 @@ a{
 }
 
 #Hero img{
-    width: 50vw;
-    height: 50vw;
-    max-width: 360px;
-    max-height: 360px;
+    width: 30vw;
+    height: 30vw;
+    max-height: 460px;
+    max-width: 460px;
+    min-height: 240px;
+    min-width: 240px;
     object-fit: cover;
-    border-radius: 40vw;
+    border-radius: 100%;
+    margin: 50px;
 }
 
 #Hero h1 {
     text-align: center;
     color: #F6F4F2;
-    /* font-size: 42px; */
+    font-size:calc(22px + 1vw);
     margin: auto 0;
 }
 
 #Hero h1 strong{
-    color: #EC9F52;
+    color: #AF3140;
 }
 
 #Header{
@@ -67,7 +78,6 @@ a{
 #About{
     margin: 0 auto;
     height: auto;
-    color: #043D5A;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -90,12 +100,11 @@ a{
     flex-direction: column;
 }
 
-.About-info--row.technologies{
+.About-info--row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2px 40px;
-    text-align: center;
 }
 
 .About--images img{
@@ -112,34 +121,32 @@ a{
 }
 
 .Rounded_container strong{
-    color: #EC9F52;
+    color: #AF3140;
 }
 
 .Rounded_container.experience{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
-    background-color: #043D5A;
-    height: 180px;
+    height: auto;
     width: 100%;
     margin-bottom: 40px;
-    color: #F6F4F2;
+    background-color: #0876AD;
 }
 
 .Rounded_container.experience h2{
-    margin: 0;
+    color: #F6F4F2;
 }
 
 .Rounded_container.experience img{
-    width: 30vw;
+    width: 20vw;
     max-width: 310px;
 }
 
 #Portfolio{
    height:auto; 
-   background-color: #F6F4F2;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -149,14 +156,13 @@ a{
 #Portfolio h2{
     text-align: center;
     width: 100%;
-    color: #AF3140;
 }
 
 .Rounded_container.Portfolio_project{
     height: 260px;
     margin: 10px 0 30px 0;
     padding: inherit;
-    background-color: #EAEAEA;
+    /* background-color: #EAEAEA; */
     display: flex;
 }
 
@@ -168,7 +174,6 @@ a{
 }
 
 .Portfolio_project--info{
-    color: #043D5A;
     margin: 15px 5px 15px 10px;
     display: flex;
     flex-direction: column;
@@ -176,7 +181,7 @@ a{
 }
 
 .Portfolio_project--info a{
-    color: #EC9F52;
+    color: #AF3140;
 }
 
 .Portfolio_project--info h3{
@@ -197,7 +202,6 @@ a{
 }
 
 .Rounded_container.contact{
-    background-color: #E0E0E0;
     height: auto;
     width: 100%;
     margin: 40px 0;
@@ -212,13 +216,14 @@ a{
     display: flex;
     flex-wrap: wrap;
     margin: 20px 0 30px 0;
+    justify-content: space-around;
 }
 
 .Rounded_container.contact img{
     width: 12vw;
     height: 12vw;
-    max-height: 120px;
-    max-width: 120px;
+    max-height: 60px;
+    max-width: 60px;
     margin: 0 1vw;
     object-fit: contain;
 }
@@ -226,10 +231,13 @@ a{
 footer{
     background-color: #021A26;
     color: #F6F4F2;
-    height: 105px;
+    height: auto;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 @media screen and (max-width: 1441px){
@@ -304,6 +312,10 @@ footer{
 
     .Portfolio_project--info{
         font-size: 3vw;
+    }
+
+    footer p{
+        width: 100%;
     }
 }
 
