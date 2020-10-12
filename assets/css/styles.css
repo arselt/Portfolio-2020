@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Rubik', sans-serif;
+    font-size: 62.5%;
 }
 
 a{
@@ -54,7 +55,7 @@ h2{
 #Hero h1 {
     text-align: center;
     color: #F6F4F2;
-    font-size:calc(22px + 1vw);
+    font-size:calc(22rem + 1vw);
     margin: auto 0;
 }
 
